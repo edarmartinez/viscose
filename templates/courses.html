@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+</head>
+<body>
+    <h1>Available Courses</h1>
+    <ul>
+        <!-- In courses.html -->
+        {% for course in courses %}
+            <p>Course ID: {{ course[0] }}, Course Name: {{ course[1] }}, Credits: {{ course[2] }}</p>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
+

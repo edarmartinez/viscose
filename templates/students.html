@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <ul>
+        <!-- In students.html -->
+        {% for student in students %}
+            <p>Student ID: {{ student[0] }}, Name: {{ student[1] }}, Age: {{ student[2] }}</p>
+        {% endfor %}
+
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Management System</title>
+    <!-- Add any additional head elements here (like CSS links) -->
+</head>
+<body>
+    <h1>Welcome to the Course Management System</h1>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <!-- In index.html -->
+            <li><a href="{{ url_for('list_courses') }}">View Courses</a></li>
+            <li><a href="{{ url_for('list_students') }}">View Students</a></li>
+            <li><a href="{{ url_for('enroll_course') }}">Enroll in a Course</a></li>
+            <li><a href="{{ url_for('add_student') }}">Add New Student</a></li>
+            <!-- Add more links as needed for other functionalities -->
+        </ul>
+    </nav>
+    
+
+    <!-- Additional content or information can go here -->
+</body>
+</html>
+
